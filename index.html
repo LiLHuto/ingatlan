@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingatlan Eladás</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ingatlan Eladás</h1>
+    </header>
+    <main>
+        <section id="ads-section">
+            <h2>Hirdetések</h2>
+            <div id="ads-container">
+                <!-- Példa hirdetés -->
+                <div class="ad">
+                    <h3>Családi ház eladó</h3>
+                    <p>Eladó családi ház a belvárosban, 120 m², 3 szoba.</p>
+                    <button class="interest-button" data-ad-title="Családi ház eladó">Érdeklődés</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-ad-section">
+            <h2>Új Hirdetés Felvitele</h2>
+            <form id="new-ad-form">
+                <label for="title">Hirdetés címe:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Leírás:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <button type="submit">Hirdetés Felvétele</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
